@@ -4,7 +4,8 @@
 infile=$(realpath "$1")
 ln -sf "$infile" /tmp/code.emojic
 ~/Emojicode/bin/emojicodec /tmp/code.emojic
+chmod +x /tmp/code
 
-cat - | ~/Emojicode/bin/emojicode /tmp/code.emojib
+cat - | /tmp/code
 
-rm /tmp/code.emojic /tmp/code.emojib
+rm /tmp/code.emojic /tmp/code
