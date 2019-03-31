@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat - | /tmp/rakudo-star-2019.03/install/bin/perl6 "$1"
